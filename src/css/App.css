@@ -1,0 +1,116 @@
+.major-cont{
+  width: 100%;
+  height: 100dvh;
+  background-color: #0c90fc;
+  font-family: "Samsung Sharp Sans";
+  transition: background-color 2s;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-cont{
+  width: 45%;
+  height: 65dvh;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px 3px rgba(19, 42, 82, 0.247);
+}
+.form-inner{
+  width: 85%;
+  height: 45dvh;
+  padding: 1em;
+  gap: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-inner h3{
+  color: #0c90fc;
+}
+.not-reg{
+  font-size: 0.7em;
+  color: #0c90fc;
+}
+.grey{
+  color: gray;
+}
+form{
+  width: 100%;
+  gap: 1em;
+}
+.form-icon{
+  width: 1.5em;
+  height: 1.5em;
+}
+.form-input{
+  border: none;
+  outline: none;
+  padding: 0em 0.5em;
+  border-radius: 20px;
+  height: 7.5vh;
+  width: 90%;
+  background-color: rgb(211, 209, 209) ;
+}
+.input-row{
+  background-color: rgb(211, 209, 209) ;
+  justify-content: space-around;
+  padding: 0em 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.input-row:focus-within {
+  border-color: #007bff; 
+}
+.form-submit-button {
+  /* what you have */
+  border: none;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 25px;
+  color: white;
+  background-color: #0c90fc;
+  font-size: 1rem;
+  font-family: inherit;        
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.form-submit:hover {
+  background-color: #0a78d1;    
+}
+.form-submit:active {
+  transform: scale(0.98);       
+}
+.form-submit:disabled {
+  background-color: #a8c9e6;
+  cursor: not-allowed;
+}
+.check-forgotpassword{
+ margin-bottom: 1em;
+ padding: 0 0.5em;
+ justify-content: space-between;
+}
+label[for="subscribe"] {
+  font-size: 0.7em;
+  color: gray;
+}
+
+
+@media (max-width: 768px) { 
+  .major-cont, .form-submit-button{
+    background-color: rgb(21, 43, 139);
+    transition: background-color 2s;
+  }
+  .form-inner h3, .not-reg{
+    color: rgb(21, 43, 139); 
+  }
+  .form-cont{
+    padding: 0.5em;
+  }
+
+}
+
+
+
