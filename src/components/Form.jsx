@@ -46,9 +46,7 @@ import Input from "./Input";
                         }
                         src="/user-solid-full.svg" alt="user-solid-full"
                     />
-        Frontend validation added
-        icons added
-        form submission functionality
+                    
                     <Input type="password" id="password" placeholder="Password" error={errors.password}
                         {...register("password", 
                             {   required: "Password is required",
