@@ -40,19 +40,6 @@ form{
   width: 100%;
   gap: 1em;
 }
-.form-icon{
-  width: 1.5em;
-  height: 1.5em;
-}
-.form-input{
-  border: none;
-  outline: none;
-  padding: 0em 0.5em;
-  border-radius: 20px;
-  height: 7.5vh;
-  width: 90%;
-  background-color: rgb(211, 209, 209) ;
-}
 .input-row{
   background-color: rgb(211, 209, 209) ;
   justify-content: space-around;
@@ -63,6 +50,32 @@ form{
 }
 .input-row:focus-within {
   border-color: #007bff; 
+}
+.form-icon{
+  width: 1.5em;
+  height: 1.5em;
+}
+.form-input{
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0em 0.5em;
+  height: 7.5vh;
+  width: 90%;
+  background-color: rgb(211, 209, 209) ;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(211, 209, 209) inset !important;
+    -webkit-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.error-color{
+  color: crimson;
+  font-size: 0.7rem;
+  margin-bottom: 0.5em;
 }
 .form-submit-button {
   /* what you have */
